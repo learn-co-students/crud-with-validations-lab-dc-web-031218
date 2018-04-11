@@ -1,0 +1,48 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Released?</th>
+    <th>Release Year</th>
+    <th>Artist Name</th>
+    <th>Genre</th>
+    <th colspan="2"></th>
+  </tr>
+
+    <tbody>
+<% @songs.each do |song|  %>
+<!-- <tr>
+  <td colspan= "7"><small><%= song.inspect %></small></td>
+</tr> -->
+
+<tr>
+
+  <td><%= song.title %></td>
+  <td><%= song.released ? "Yes" : "No"%></td>
+  <td><%= song.release_year %></td>
+  <td><%= song.artist_name %></td>
+  <td><%= song.genre %></td>
+  <td><%= link_to 'Edit Song', edit_song_path(song) %></td>
+  <td><%= link_to 'Delete Song', song, method: :delete, data: {confirm: "Are you sure you want to delete \"" + song.title + "\"?"} %></td>
+
+</tr>
+<% end  %>
+</tbody>
+</table>
+
+
+<style>
+able {
+    border-collapse: collapse;
+}
+
+table{
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+    border: 1px solid #ccc;
+    vertical-align: top;
+    background-color: #ccc;
+    color: #fff
+}
+
+</style

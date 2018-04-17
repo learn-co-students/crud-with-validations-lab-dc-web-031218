@@ -1,0 +1,6 @@
+song1 = Song.create(title: "My Song", artist_name: "Kyle", release_year: 2017, released: true, genre: "hip hop")
+song2 = Song.create(title: "Today", artist_name: "Dev", release_year: 2012, released: true, genre: "R&B")
+song3 = Song.create(title: "Classic", artist_name: "Atom", release_year: 2018, released: true, genre: "country")
+song4 = Song.create(title: "Happens Everytime", artist_name: "Lucy", release_year: 2013, released: true, genre: "metal")
+song5 = Song.create(title: "Another One", artist_name: "Snoop", release_year: 2020, released: false, genre: "rap")
+song6 = Song.create(title: "Always Be Panicking", artist_name: "Hightops", release_year: 2002, released: true, genre: "classical")
